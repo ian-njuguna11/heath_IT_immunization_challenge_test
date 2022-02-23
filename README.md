@@ -44,3 +44,9 @@ Run
 ```bash
 php artisan serve
 ```
+
+#### 7. Routes
+Run
+```bash
+   http://localhost:8000/vaccine/
+```
