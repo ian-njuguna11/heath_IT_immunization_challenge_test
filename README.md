@@ -9,7 +9,7 @@
 ### Installation
 #### 1. Clone the repository
 ```bash
-git clone https://github.com/kiptooshem/timetabling.git
+git clone https://github.com/ian-njuguna11/heath_IT_immunization_challenge_test/
 ```
 #### 2. Install the dependencies
 Ensure you have `composer` installed on your computer before proceeding.
