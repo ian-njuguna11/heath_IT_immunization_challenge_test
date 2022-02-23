@@ -47,15 +47,22 @@
 
                     <td>
 
+
                         <a href="{{url('getChild/'.$children->id)}}">
                             {{-- <button type="button" class="btn btn-danger">Delete</button> --}}
-                            <button class="btn-primary">Update</button>
+                            <button class="btn btn-warning">List of vaccines this child has gotten</button>
+
+                        </a>
+
+                        <a href="{{url('getChild/'.$children->id)}}">
+                            {{-- <button type="button" class="btn btn-danger">Delete</button> --}}
+                            <button class="btn btn-primary">Update</button>
 
                         </a>
 
                         <a href="{{url('destroyChild/'.$children->id)}}">
                             {{-- <button type="button" class="btn btn-danger">Delete</button> --}}
-                            <button class="btn-danger">Delete</button>
+                            <button class="btn btn-danger">Delete</button>
 
                         </a>
 
