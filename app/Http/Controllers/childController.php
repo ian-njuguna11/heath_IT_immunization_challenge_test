@@ -4,15 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-namespace App\Models\Children;
+use App\Models\Children;
 
-class childrenController extends Controller
+class childController extends Controller
 {
-    
     public function index(Request $request){
         $children = Children::all();
 
-        return view("children",['children'=>$children]);
+        return view("children",['childrens'=>$children]);
     }
 
 
@@ -65,5 +64,4 @@ class childrenController extends Controller
         return redirect('children\'s')->with('success', 'Item Removed');
     
     }
-
 }

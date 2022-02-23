@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\childController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/vaccine', function () {
-    return view('vaccine');
-});
+// Route::get('/vaccine', function () {
+//     return view('vaccine');
+// });
+
+Route::get('/vaccine', [childController::class, 'index']);
 
