@@ -13,7 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('vaccines', function (Blueprint $table) {
+            $table->id();
+            $table->string('vaccine_name');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -22,11 +26,7 @@ return new class extends Migration
      * @return void
      */
     public function down()
-    {       
-        
-     Schema::create('vaccinnes', function (Blueprint $table) {
-        $table->id();
-        $table->string('vaccine_type');
-    });
+    {
+        //
     }
 };

@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Children>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Vaccine>
  */
-class ChildrenFactory extends Factory
+class VaccineFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,9 +17,7 @@ class ChildrenFactory extends Factory
     public function definition()
     {
         return [
-            //
-            'name' => $this->faker->name,
-            'DOB' => $this->faker->dateTime(),            
+            'vaccine_name' => $this->faker->name,
         ];
     }
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\childController;
+use App\Http\Controllers\vaccinneController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,6 @@ use App\Http\Controllers\childController;
 //     return view('vaccine');
 // });
 
-Route::get('/vaccine', [childController::class, 'index']);
+Route::get('/children-list', [childController::class, 'index']);
+Route::get('/vaccine-list', [vaccinneController::class, 'index']);
 

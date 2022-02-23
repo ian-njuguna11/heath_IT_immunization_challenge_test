@@ -8,7 +8,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <!-- Styles -->
         <style>
@@ -22,19 +24,32 @@
         </style>
     </head>
     <body class="antialiased">
-        
-        <div class="header">ALL Vaccine:</div>
+
 
         <table class="table" id="roomsTable">
             <thead>
             <tr>
-                <th>Vaccine</th>>
+                <th>Child id </th>
+                <th>Child Name </th>
+                <th>Child DOB </th>
+                <th>created_at </th>
+                <th>updated_at </th>
             </tr>
             </thead>
             <tbody>
             @foreach($childrens as $children)
                 <tr>
+                    <td>{{$children->id   }}</td>
                     <td>{{$children->name   }}</td>
+                    <td>{{$children->DOB   }}</td>
+                    <td>{{$children->created_at   }}</td>
+                    <td>{{$children->updated_at   }}</td>
+
+                    <td>
+                        <button class="btn-primary">update</button>
+                        <button class="btn-danger">update</button>
+
+                    </td>
                 </tr>
             @endforeach
             </tbody>

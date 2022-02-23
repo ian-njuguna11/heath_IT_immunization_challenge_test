@@ -12,7 +12,7 @@ class vaccinneController extends Controller
     public function index(Request $request){
         $vaccines = Vaccine::all();
 
-        return view("vaccine",['vaccine'=>$vaccines]);
+        return view("vaccine",['vaccines'=>$vaccines]);
     }
 
 
