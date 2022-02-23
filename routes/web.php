@@ -22,3 +22,7 @@ use App\Http\Controllers\vaccinneController;
 Route::get('/children-list', [childController::class, 'index']);
 Route::get('/vaccine-list', [vaccinneController::class, 'index']);
 
+//child 
+// getChild
+Route::get('/getChild/{id}', [childController::class, 'getChild']);
+

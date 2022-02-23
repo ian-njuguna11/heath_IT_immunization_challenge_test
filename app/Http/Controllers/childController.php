@@ -25,7 +25,7 @@ class childController extends Controller
         
     }
 
-    public function getVaccines($id){
+    public function getChild($id){
         $Children = Children::all();
 
         $row = Children::where('id', $id)
