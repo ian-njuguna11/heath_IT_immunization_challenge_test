@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        
+
 
         <!-- Styles -->
         <style>
@@ -23,38 +23,23 @@
     </head>
     <body class="antialiased">
         
-        <div>   
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-        </div>
+        <div class="header">ALL Vaccine:</div>
+
+        <table class="table" id="roomsTable">
+            <thead>
+            <tr>
+                <th>Vaccine</th>>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach($vaccines as $vaccine)
+                <tr>
+                    <td>{{$vaccine->vaccineType}}</td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+    </div>
        
     </body>
 </html>
