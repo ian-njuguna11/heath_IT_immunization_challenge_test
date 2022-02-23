@@ -34,6 +34,7 @@
                 <th>Child DOB </th>
                 <th>created_at </th>
                 <th>updated_at </th>
+                <th>Actions </th>
             </tr>
             </thead>
             <tbody>
