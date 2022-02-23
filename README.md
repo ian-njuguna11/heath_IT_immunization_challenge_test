@@ -13,7 +13,7 @@ git clone https://github.com/ian-njuguna11/heath_IT_immunization_challenge_test/
 ```
 #### 2. Install the dependencies
 Ensure you have `composer` installed on your computer before proceeding.
-Navigate to the root of the project. i.e If you are on linux terminal: `$cd timetabling`
+Navigate to the root of the project. i.e If you are on linux terminal: `$cd heath_IT_immunization_challenge`
 
 The run:
 ```bash
