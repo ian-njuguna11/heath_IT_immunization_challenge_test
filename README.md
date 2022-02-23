@@ -55,5 +55,22 @@ Run
    http://localhost:8000/vaccine-list/
    http://localhost:8000/getChild/4/
    http://localhost:8000/getVaccine/2
+   http://localhost:8000/vaccinations/5
+```
+
+#### 8. To create a new vaccination instance on a specific child
+Run
+```bash
+php artisan tinker
+
+create new child vaccination instance
+    $child_vaccination_instance = new child_vaccine_join()
+    $child_vaccination_instance->child_id = 5
+    $child_vaccination_instance->vaccine_id = 5
+    $child_vaccination_instance->save()
+
+go to url to check instance:
+
+   http://localhost:8000/vaccinations/5
 
 ```
