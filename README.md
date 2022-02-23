@@ -48,5 +48,6 @@ php artisan serve
 #### 7. Routes
 Run
 ```bash
+    --get request to--
    http://localhost:8000/vaccine/
 ```
