@@ -31,7 +31,7 @@
             <tr>
                 <th>Vaccination Instance id </th>
                 <th>Child id </th>
-                <th>Child Name </th>
+                <th>Vaccine Name </th>
                
             </tr>
             </thead>
@@ -40,11 +40,11 @@
                 <tr>
                     <td>{{$vaccine->id   }}</td>
                     <td>{{$vaccine->child_id   }}</td>
-                    <td>{{$vaccine->vaccine_id   }}</td>
+                    <td>{{$vac_name}}</td>
 
                     <td>
 
-                        <a href="{{url('getChild/'.$children->id)}}">
+                        <a href="{{url('getChild/'.$vaccine->id)}}">
                             {{-- <button type="button" class="btn btn-danger">Delete</button> --}}
                             <button class="btn btn-primary">Update Dosage</button>
 
