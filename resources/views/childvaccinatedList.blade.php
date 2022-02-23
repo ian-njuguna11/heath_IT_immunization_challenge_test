@@ -29,40 +29,24 @@
         <table class="table" id="roomsTable">
             <thead>
             <tr>
+                <th>Vaccination Instance id </th>
                 <th>Child id </th>
                 <th>Child Name </th>
-                <th>Child DOB </th>
-                <th>created_at </th>
-                <th>updated_at </th>
+               
             </tr>
             </thead>
             <tbody>
-            @foreach($childrens as $children)
+            @foreach($vaccines as $vaccine)
                 <tr>
-                    <td>{{$children->id   }}</td>
-                    <td>{{$children->name   }}</td>
-                    <td>{{$children->DOB   }}</td>
-                    <td>{{$children->created_at   }}</td>
-                    <td>{{$children->updated_at   }}</td>
+                    <td>{{$vaccine->id   }}</td>
+                    <td>{{$vaccine->child_id   }}</td>
+                    <td>{{$vaccine->vaccine_id   }}</td>
 
                     <td>
 
-
-                        <a href="{{url('vaccinations/'.$children->id)}}">
-                            {{-- <button type="button" class="btn btn-danger">Delete</button> --}}
-                            <button class="btn btn-warning">List of vaccines this child has gotten</button>
-
-                        </a>
-
                         <a href="{{url('getChild/'.$children->id)}}">
                             {{-- <button type="button" class="btn btn-danger">Delete</button> --}}
-                            <button class="btn btn-primary">Update</button>
-
-                        </a>
-
-                        <a href="{{url('destroyChild/'.$children->id)}}">
-                            {{-- <button type="button" class="btn btn-danger">Delete</button> --}}
-                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-primary">Update Dosage</button>
 
                         </a>
 

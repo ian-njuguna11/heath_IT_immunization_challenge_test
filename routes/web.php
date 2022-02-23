@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\childController;
 use App\Http\Controllers\vaccinneController;
+use App\Http\Controllers\vaccineAdminstrationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +32,6 @@ Route::post('editChild',[childController::class, 'update']);
 
 Route::get('destroyChild/{id}',[childController::class, 'delete']);
 Route::get('destroyVaccine/{id}',[vaccinneController::class, 'delete']);
+
+Route::get('vaccinations/{child_id}', [vaccineAdminstrationController::class, 'getchildVaccine']);
 
