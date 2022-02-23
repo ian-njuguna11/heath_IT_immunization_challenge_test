@@ -41,27 +41,28 @@ class childController extends Controller
         return view('edit_child',['data' => $data],$params);
     }
 
-    public function update(){
+    public function update(Request $request){
 
-        $request->validate([
+        $data = $request->validate([
             'name' => 'required',
             'DOB' => 'required',
         ]);
 
         Children::where('id',$request->id)->update([
-            'name'=>$request->input('name'),
-            'DOB'=>$request->input('DOB')
+            'name'=>$request->name,
+            'DOB'=>$request->DOB
         ]);
 
-        return redirect('children\'s');
+        return redirect('children-list');
+         // dd($data);
     
     }
 
-    public function delete(Request $request){
-        $vaccine = Children::find($id);
+    public function delete(Request $request,$id){
+        $child = Children::find($id);
         
-        $vaccine->delete();
-        return redirect('children\'s')->with('success', 'Item Removed');
+        $child->delete();
+        return redirect('children-list')->with('success', 'Item Removed');
     
     }
 }

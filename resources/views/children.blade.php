@@ -46,8 +46,19 @@
                     <td>{{$children->updated_at   }}</td>
 
                     <td>
-                        <button class="btn-primary">update</button>
-                        <button class="btn-danger">update</button>
+
+                        <a href="{{url('getChild/'.$children->id)}}">
+                            {{-- <button type="button" class="btn btn-danger">Delete</button> --}}
+                            <button class="btn-primary">Update</button>
+
+                        </a>
+
+                        <a href="{{url('destroyChild/'.$children->id)}}">
+                            {{-- <button type="button" class="btn btn-danger">Delete</button> --}}
+                            <button class="btn-danger">Delete</button>
+
+                        </a>
+
 
                     </td>
                 </tr>

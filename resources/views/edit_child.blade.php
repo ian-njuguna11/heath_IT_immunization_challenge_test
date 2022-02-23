@@ -23,19 +23,25 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form id="quickForm" method="POST" action="{{url('/editLecturer')}}" class="form">
+                    <form id="quickForm" method="POST" action="{{url('/editChild')}}" class="form">
                         {{csrf_field()}}
                         <input type="hidden" name="child_id" value="{{ $data['id'] }}">
                         <div class="card-body">
                             <div class="form-group">
 {{--                                    <label for="lecturer">First Name</label>--}}
-                                <input value="{{ $data["id"] }}" type="hidden" id="lec_id"
-                                       class="form-control" name="lec_id"  required>
+                                <input value="{{ $data["id"] }}" type="hidden" id="child_id"
+                                       class="form-control" name="child_id"  required>
                             </div>
                             <div class="form-group">
                                 <label for="lecturer">Child First Name</label>
                                 <input value="{{ $data["name"] }}" type="text" id="name"
                                        class="form-control" name="name" placeholder="Child name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lecturer">Child DOB</label>
+                                <input value="{{ $data["DOB"] }}" type="text" id="name"
+                                       class="form-control" name="DOB" placeholder="Child name" required>
                             </div>
 
                         </div>
