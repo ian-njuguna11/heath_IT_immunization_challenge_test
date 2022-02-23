@@ -33,7 +33,9 @@ Then run migration. This will run database scripts to create database tables:
 ```bash
 php artisan migrate
 #### 5. Seed the database
-If the migration is successfull, seed the database 
+If the migration is successfull, seed the database.
+I am user laravel facker composer packege to generate fake date.
+If u skip this step your database instance will not have any data.
 ```bash
 php artisan db:seed
 ```
@@ -49,5 +51,6 @@ php artisan serve
 Run
 ```bash
     --get request to--
-   http://localhost:8000/vaccine/
+   http://localhost:8000/children-list/
+   http://localhost:8000/vaccine-list/
 ```
