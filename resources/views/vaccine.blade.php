@@ -32,6 +32,7 @@
                 <th>Vaccine Name </th>
                 <th>created_at </th>
                 <th>updated_at </th>
+                <th>Actions </th>
             </tr>
             </thead>
             <tbody>
@@ -43,8 +44,14 @@
                     <td>{{$vaccine->updated_at   }}</td>
 
                     <td>
-                        <button class="btn-primary">update</button>
-                        <button class="btn-danger">update</button>
+
+                        <a href="{{url('getVaccine/'.$vaccine->id)}}">
+                            <button class="btn-primary">update</button>
+                        </a>
+
+                        <a href="{{url('destroyVaccine/'.$vaccine->id)}}">
+                            <button class="btn-danger">Delete</button>                            
+                        </a>
 
                     </td>
 

@@ -50,11 +50,10 @@ class vaccinneController extends Controller
     
     }
 
-    public function delete(Request $request){
+    public function delete(Request $request,$id){
         $vaccine = Vaccine::find($id);
         
         $vaccine->delete();
-        return redirect('vaccine')->with('success', 'Item Removed');
-    
+        return redirect('vaccine-list')->with('success', 'Item Removed');
     }
 }
