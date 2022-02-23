@@ -53,4 +53,5 @@ Run
     --get request to--
    http://localhost:8000/children-list/
    http://localhost:8000/vaccine-list/
+   http://localhost:8000/getChild/4/
 ```
