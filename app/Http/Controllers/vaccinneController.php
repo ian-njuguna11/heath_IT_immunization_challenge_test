@@ -25,19 +25,15 @@ class vaccinneController extends Controller
         
     }
 
-    public function getVaccines($id){
+    public function getVaccine($id){
         $Vaccine = Vaccine::all();
 
         $row = Vaccine::where('id', $id)
             ->first();
 
-        $params = [
-            'vaccine_type' => $row->name,
-        ];
-
         $data = Vaccine::find($id);
 
-        return view('edit_vaccine_type',['data' => $data],$params);
+        return view('edit_vaccine_type',['data' => $data]);
     }
 
     public function update(){

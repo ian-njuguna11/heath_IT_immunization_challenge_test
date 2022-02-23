@@ -25,4 +25,5 @@ Route::get('/vaccine-list', [vaccinneController::class, 'index']);
 //child 
 // getChild
 Route::get('/getChild/{id}', [childController::class, 'getChild']);
+Route::get('/getVaccine/{id}', [vaccinneController::class, 'getVaccine']);
 

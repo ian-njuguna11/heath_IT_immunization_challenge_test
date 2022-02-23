@@ -54,4 +54,6 @@ Run
    http://localhost:8000/children-list/
    http://localhost:8000/vaccine-list/
    http://localhost:8000/getChild/4/
+   http://localhost:8000/getVaccine/2
+
 ```
